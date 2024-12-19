@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="./styles/style.css" />
         <link rel="stylesheet" href="./styles/animations.css" />
         <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon.svg" />
     </head>
     <body class="page">
         <header class="header">
@@ -18,16 +19,19 @@
         </header>
 
         <main class="main">
-            <ul class="cards-list">
-                <li class="card">
+            
+                <article class="card">
                     <h2 class="card-title">Фритрек и нулевой спринт: Подготовка к работе</h2>
-                    <div class="bus-image"></div>
+                    <figure>
+                    <img class="bus-image" src="../images/image-work.jpg" alt="Дом на фоне гор"></img>
+                    <figcaption class="image-text">&lt;/HTML&gt;</figcaption>
+                    </figure>
                     <div class="card-text-block">
                         <p class="card-text">Это было самое начало пути. На этом этапе важно было проникнуться основами и настроиться на учёбу. И, возможно, подумать, как новые знания могут повлиять на ваше будущее.</p>
                         <p class="card-text">Место для ваших воспоминаний о начале обучения.</p>
                     </div>
                     <div class="button-block">
-                        <button class="card__icon-button" type="button">
+                        <button class="card__icon-button" type="button" aria-label="кнопка лайка">
                             <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 39">
                                 <g class="heart">
                                     <path
@@ -45,12 +49,15 @@
                                 <path class="sparks" d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z" fill="var(--color-fill)" />
                             </svg>
                         </button>
-                        <button class="card__like-button animation-button"><span class="button__text">Like</span></button>
+                        <button class="card__like-button animation-button" type="button" aria-label="кнопка лайка"><span class="button__text">Like</span></button>
                     </div>
-                </li>
-                <li class="card">
+                </article>
+                <article class="card">
                     <h2 class="card-title">1 спринт: Я — чистый лист</h2>
-                    <div class="bus-image image-filter"></div>
+                    <figure>
+                        <img class="bus-image filter1" src="../images/image-work.jpg" alt="Дом на фоне гор"></img>
+                        <figcaption class="image-text">&lt;/HTML&gt;</figcaption>
+                        </figure>   
                     <div class="card-text-block">
                         <p class="card-text">
                             На первых этапах мы работали со страхами и сомнениями, которые часто испытывают новички. Один из них — страх перед чистым листом. Это, конечно же, намного сложнее, чем боязнь куска бумаги. Часто за этим ощущением
@@ -59,7 +66,7 @@
                         <p class="card-text">Место для ваших воспоминаний о начале первого спринта.</p>
                     </div>
                     <div class="button-block">
-                        <button class="card__icon-button" type="button">
+                        <button class="card__icon-button" type="button" aria-label="кнопка лайка">
                             <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 39">
                                 <g>
                                     <path
@@ -77,18 +84,21 @@
                                 <path class="sparks" d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z" fill="var(--color-fill)" />
                             </svg>
                         </button>
-                        <button class="card__like-button animation-button"><span class="button__text">Like</span></button>
+                        <button class="card__like-button animation-button" type="button" aria-label="кнопка лайка"><span class="button__text">Like</span></button>
                     </div>
-                </li>
-                <li class="card">
+                </article>
+                <article class="card">
                     <h2 class="card-title">1 спринт: А если не получится?</h2>
-                    <div class="bus-image image-filter"></div>
+                    <figure>
+                        <img class="bus-image filter2" src="../images/image-work.jpg" alt="Дом на фоне гор"></img>
+                        <figcaption class="image-text">&lt;CSS&gt;</figcaption>
+                        </figure>
                     <div class="card-text-block">
                         <p class="card-text">Первый проект — позади! Но это всё ещё самое начало пути. Радость могла быстро померкнуть и смениться ожиданием провала. Или вы, наоборот, могли вдохновиться успехами и поверить в себя.</p>
                         <p class="card-text">Место для ваших воспоминаний об окончании первого спринта.</p>
                     </div>
                     <div class="button-block">
-                        <button class="card__icon-button" type="button">
+                        <button class="card__icon-button" type="button" aria-label="кнопка лайка">
                             <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 39">
                                 <g>
                                     <path
@@ -106,13 +116,16 @@
                                 <path class="sparks" d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z" fill="var(--color-fill)" />
                             </svg>
                         </button>
-                        <button class="card__like-button animation-button"><span class="button__text">Like</span></button>
+                        <button class="card__like-button animation-button" type="button" aria-label="кнопка лайка"><span class="button__text" >Like</span></button>
                     </div>
-                </li>
+                </article>
 
-                <li class="card">
+                <article class="card">
                     <h2 class="card-title">2 спринт: Погоня за идеалом</h2>
-                    <div class="bus-image image-filter"></div>
+                    <figure>
+                        <img class="bus-image filter3" src="../images/image-work.jpg" alt="Дом на фоне гор"></img>
+                        <figcaption class="image-text">&lt;desigions&gt;</figcaption>
+                        </figure>
                     <div class="card-text-block">
                         <p class="card-text">
                             На этом этапе вы уже достаточно разбирались в основах вёрстки, чтобы понять, как много ещё впереди. Вы могли попытаться погнаться за идеалом и понять, что он недостижим. А, может, вы вовсе и не подвержены
@@ -121,7 +134,7 @@
                         <p class="card-text">Место для ваших воспоминаний о начале второго спринта.</p>
                     </div>
                     <div class="button-block">
-                        <button class="card__icon-button" type="button">
+                        <button class="card__icon-button" type="button" aria-label="кнопка лайка">
                             <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 39">
                                 <g>
                                     <path
@@ -139,13 +152,16 @@
                                 <path class="sparks" d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z" fill="var(--color-fill)" />
                             </svg>
                         </button>
-                        <button class="card__like-button animation-button"><span class="button__text">Like</span></button>
+                        <button class="card__like-button animation-button" type="button" aria-label="кнопка лайка"><span class="button__text">Like</span></button>
                     </div>
-                </li>
+                </article>
 
-                <li class="card">
+                <article class="card">
                     <h2 class="card-title">2 спринт: О тех, кто рядом</h2>
-                    <div class="bus-image image-filter"></div>
+                    <figure>
+                        <img class="bus-image filter4" src="../images/image-work.jpg" alt="Дом на фоне гор"></img>
+                        <figcaption class="image-text">care</figcaption>
+                        </figure>
                     <div class="card-text-block">
                         <p class="card-text">
                             Всё это время вы были не одиноки (хотя, возможно, иногда и чувствовали, что одни против целого мира). Вас окружали одногруппники, команда сопровождения и просто близкие люди, которым можно пожаловаться, если
@@ -154,7 +170,7 @@
                         <p class="card-text">Место для ваших воспоминаний об окончании второго спринта.</p>
                     </div>
                     <div class="button-block">
-                        <button class="card__icon-button" type="button">
+                        <button class="card__icon-button" type="button" aria-label="кнопка лайка">
                             <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 39">
                                 <g>
                                     <path
@@ -172,19 +188,22 @@
                                 <path class="sparks" d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z" fill="var(--color-fill)" />
                             </svg>
                         </button>
-                        <button class="card__like-button animation-button"><span class="button__text">Like</span></button>
+                        <button class="card__like-button animation-button" type="button" aria-label="кнопка лайка"><span class="button__text">Like</span></button>
                     </div>
-                </li>
+                </article>
 
-                <li class="card">
+                <article class="card">
                     <h2 class="card-title">3 спринт: Обходные стратегии</h2>
-                    <div class="bus-image image-filter"></div>
+                    <figure>
+                        <img class="bus-image filter5" src="../images/image-work.jpg" alt="Дом на фоне гор"></img>
+                        <figcaption class="image-text">&lt;support&gt;</figcaption>
+                        </figure>
                     <div class="card-text-block">
                         <p class="card-text">На этом курсе вы постоянно решали разные задачи. В какой-то момент вам могло показаться, что решения просто иссякли. Значит, пришло время посмотреть на задачу под другим углом.</p>
                         <p class="card-text">Место для ваших воспоминаний о начале третьего спринта.</p>
                     </div>
                     <div class="button-block">
-                        <button class="card__icon-button" type="button">
+                        <button class="card__icon-button" type="button" aria-label="кнопка лайка">
                             <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 39">
                                 <g>
                                     <path
@@ -202,12 +221,15 @@
                                 <path class="sparks" d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z" fill="var(--color-fill)" />
                             </svg>
                         </button>
-                        <button class="card__like-button animation-button"><span class="button__text">Like</span></button>
+                        <button class="card__like-button animation-button" type="button" aria-label="кнопка лайка"><span class="button__text">Like</span></button>
                     </div>
-                </li>
-                <li class="card">
+                </article>
+                <article class="card">
                     <h2 class="card-title">3 спринт: Когда опускаются руки</h2>
-                    <div class="bus-image image-filter"></div>
+                    <figure>
+                        <img class="bus-image filter6" src="../images/image-work.jpg" alt="Дом на фоне гор"></img>
+                        <figcaption class="image-text">&lt;lifes-style: none;&gt;</figcaption>
+                        </figure>
                     <div class="card-text-block">
                         <p class="card-text">
                             Во время учёбы часто возникает чувство, когда не знаешь, за что хвататься. Вроде и проектную пора сдавать, и задачи хочется порешать, и в теории получше разобраться, и жизнь не забыть пожить. В такие моменты
@@ -216,7 +238,7 @@
                         <p class="card-text">Место для ваших воспоминаний об окончании третьего спринта.</p>
                     </div>
                     <div class="button-block">
-                        <button class="card__icon-button" type="button">
+                        <button class="card__icon-button" type="button" aria-label="кнопка лайка">
                             <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 39">
                                 <g>
                                     <path
@@ -234,12 +256,15 @@
                                 <path class="sparks" d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z" fill="var(--color-fill)" />
                             </svg>
                         </button>
-                        <button class="card__like-button animation-button"><span class="button__text">Like</span></button>
+                        <button class="card__like-button animation-button" type="button" aria-label="кнопка лайка"><span class="button__text">Like</span></button>
                     </div>
-                </li>
-                <li class="card">
+                </article>
+                <article class="card">
                     <h2 class="card-title">«Сейчас я здесь»</h2>
-                    <div class="bus-image image-filter"></div>
+                    <figure>
+                        <img class="bus-image filter7" src="../images/image-work.jpg" alt="Дом на фоне гор"></img>
+                        <figcaption class="image-text">&lt;experience&gt;</figcaption>
+                        </figure>
                     <div class="card-text-block">
                         <p class="card-text">
                             Сейчас вы уже очень много знаете о вёрстке. Но это только начало. Во-первых, впереди ещё много материала про «красотищу». Во-вторых, с окончанием курса учёба не заканчивается. Вёрстка — это целый мир. И этот мир
@@ -249,7 +274,7 @@
                     </div>
 
                     <div class="button-block">
-                        <button class="card__icon-button" type="button">
+                        <button class="card__icon-button" type="button" aria-label="кнопка лайка">
                             <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 39">
                                 <g>
                                     <path
@@ -267,38 +292,32 @@
                                 <path class="sparks" d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z" fill="var(--color-fill)" />
                             </svg>
                         </button>
-                        <button class="card__like-button animation-button"><span class="button__text">Like</span></button>
+                        <button class="card__like-button animation-button" type="button" aria-label="кнопка лайка"><span class="button__text">Like</span></button>
                     </div>
-                </li>
-            </ul>
+                </article>
+                <button class="button-dialog button-style animation-button" type="button" onclick="window['dialog-id'].showModal();" aria-controls="dialog-id">
+                    <svg class="disk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28">
+                        <use href="./svg/disk.svg#disk-icon"></use>
+                    </svg>
+                    <span class="button__text">Сохранить на память</span>
+                </button>
+        
+                <dialog class="dialog" id="dialog-id">
+                    <div class="dialog-item">
+                        <svg class="disk-big" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 39">
+                            <use href="./svg/disk.svg#disk-icon"></use>
+                        </svg>
+                        <p class="button__text text-big">Вставьте дискету, чтобы продолжить</p>
+        
+                        <button class="button-dialog button-style-dialog animation-button" type="button" onclick="window['dialog-id'].close()">
+                            <span class="button__text text-big">ok</span>
+                        </button>
+                    </div>
+                </dialog>
+        
         </main>
 
-        <button class="button-dialog button-style animation-button" type="button" onclick="window['dialog-id'].showModal();" aria-controls="dialog-id">
-            <svg class="disk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28">
-                <use href="./svg/disk.svg#disk-icon"></use>
-            </svg>
-            <span class="button__text">Сохранить на память</span>
-        </button>
-
-        <dialog class="dialog" id="dialog-id">
-            <div class="dialog-item">
-                <svg class="disk-big" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 39">
-                    <use href="./svg/disk.svg#disk-icon"></use>
-                </svg>
-                <span class="button__text text-big">Вставьте дискету, чтобы продолжить</span>
-
-                <button class="button-dialog button-style-dialog animation-button" type="button" onclick="window['dialog-id'].close()">
-                    <span class="button__text text-big">ok</span>
-                </button>
-            </div>
-        </dialog>
 
         <script src="./scripts/like.js"></script>
     </body>
-</html>
-
-
-
-       
-  </body>
 </html>

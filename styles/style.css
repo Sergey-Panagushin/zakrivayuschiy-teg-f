@@ -14,11 +14,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  --font-family: "Inter-Variable";
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--font-family), sans-serif;
-  font-weight: var(--wght);
   background-image: repeating-linear-gradient(to left, #d3d3d3 2px 4px, transparent 4px 6px), repeating-linear-gradient(to top, #d3d3d3 2px 4px, transparent 4px 6px), linear-gradient(180deg, #e7e7e7 0%, #1a1a1a 100%);
   background-attachment: fixed;
 }
@@ -29,7 +27,7 @@
   min-height: clamp(20.3125rem, 17.1729rem + 13.3956vw, 23rem);
   max-width: 700px;
   width: 100%;
-  --font-family: "PressStart2P-Regular";
+  --font-family: "PressStart2P";
   font-family: var(--font-family), sans-serif;
   text-transform: uppercase;
   font-style: normal;
@@ -60,11 +58,15 @@
   min-height: 323px;
   max-width: 700px;
   width: 100%;
+  display: grid;
+  gap: 50px;
+  justify-items: center;
 }
 
 .card {
   background-color: #fff;
   border: 2px solid #000;
+  position: relative;
 }
 
 .bus-image {
@@ -73,16 +75,21 @@
   aspect-ratio: 1/1;
   background-size: cover;
   background-position: center;
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: -4px;
   position: relative;
-  background-image: url(../images/image-work.jpg);
 }
 
-.bus-image::after {
-  content: "";
+figure {
+  position: relative;
+}
+
+.image-text {
   position: absolute;
   color: rgba(0, 0, 0);
   -webkit-text-stroke: 0.5px #fff;
-  --font-family: "PressStart2P-Regular";
+  --font-family: "PressStart2P";
   font-family: var(--font-family), sans-serif;
   font-size: 14px;
   font-style: normal;
@@ -90,13 +97,11 @@
   line-height: normal;
   top: 25px;
   right: clamp(0.6875rem, -0.3347rem + 4.3614vw, 1.5625rem);
-  opacity: 0.5;
+  opacity: 1;
   mix-blend-mode: hard-light;
 }
 
 .cards-list {
-  display: grid;
-  gap: 50px;
 }
 
 .card-text-block {
@@ -132,7 +137,7 @@
   color: #fff;
   position: relative;
   z-index: 1;
-  --font-family: "PressStart2P-Regular";
+  --font-family: "PressStart2P";
   font-family: var(--font-family), sans-serif;
   font-size: 14px;
   align-self: center;
@@ -224,26 +229,6 @@ svg.like-icon {
   transform-origin: center;
 }
 
-@keyframes scale {
-  from {
-      scale: 1;
-  }
-
-  to {
-      scale: 1.25;
-  }
-}
-
-@keyframes fire {
-  from {
-      opacity: 0;
-  }
-
-  to {
-      opacity: 1;
-  }
-}
-
 .like-icon.is-liked .contour {
   --color-svg: red;
   fill: var(--color-svg);
@@ -290,10 +275,10 @@ svg.like-icon {
 }
 
 .button-style {
-  width: clamp(19.125rem, 17.0076rem + 9.0343vw, 20.9375rem);
-  height: clamp(3.1875rem, 7.795rem + -10.5919vw, 5.3125rem);
+  width: clamp(19.125rem, 17.0076rem + 9.0343vw, 21.2rem);
+  height: clamp(3.4rem, 7.795rem + -10.5919vw, 5.3125rem);
   max-height: 85px;
-  margin: 49px 0px 102px;
+  margin-bottom: 102px;
 }
 
 .button-style-dialog {
@@ -352,10 +337,40 @@ dialog[open]::backdrop {
   box-shadow: 2px 2px 0 #000;
 }
 
+.filter1 {
+  filter: saturate(20%);
+  filter: contrast(60%);
+}
+
+.filter2 {
+  filter: hue-rotate(-90deg);
+}
+
+.filter3 {
+  filter: sepia(70%);
+}
+
+.filter4 {
+  filter: invert(0.9);
+}
+
+.filter5 {
+  filter: grayscale(1);
+}
+
+.filter6 {
+  filter: blur(2px);
+}
+
+.filter7 {
+  filter: brightness(300%);
+}
+
 @media (width <= 375px) {
   .button-style {
       flex-direction: column;
-      margin: 49px 0px 100px;
+      padding-bottom: 7px;
+      padding-top: 2px;
   }
   .disk {
       width: 28px;
@@ -370,66 +385,3 @@ dialog[open]::backdrop {
       margin: 100px 0 102px;
   }
 }
-
-.card:nth-child(2) .bus-image {
-  filter: saturate(20%);
-  filter: contrast(60%);
-}
-
-.card:nth-child(3) .bus-image {
-  filter: hue-rotate(-90deg);
-}
-
-.card:nth-child(4) .bus-image {
-  filter: sepia(70%);
-}
-
-.card:nth-child(5) .bus-image {
-  filter: invert(0.9);
-}
-
-.card:nth-child(6) .bus-image {
-  filter: grayscale(1);
-}
-
-.card:nth-child(7) .bus-image {
-  filter: blur(2px);
-}
-
-.card:nth-child(8) .bus-image {
-  filter: brightness(300%);
-}
-
-.card:nth-child(1) .bus-image::after {
-  content: "</HTML>";
-}
-
-.card:nth-child(2) .bus-image::after {
-  content: "</HTML>";
-}
-
-.card:nth-child(3) .bus-image::after {
-  content: "<CSS>";
-}
-
-.card:nth-child(4) .bus-image::after {
-  content: "<desigions>";
-}
-
-.card:nth-child(5) .bus-image::after {
-  content: "care";
-}
-
-.card:nth-child(6) .bus-image::after {
-  content: "<support>";
-}
-
-.card:nth-child(7) .bus-image::after {
-  content: "<lifes-style: none;>";
-}
-
-.card:nth-child(8) .bus-image::after {
-  content: "<experience>";
-}
-
-
