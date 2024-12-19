@@ -14,18 +14,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  --font-family: 'Inter-Variable';
+  --font-family: "Inter-Variable";
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--font-family), sans-serif;
   font-weight: var(--wght);
-  background-image: 
-  repeating-linear-gradient(to left, #d3d3d3 2px 4px, transparent 4px 6px),
-  repeating-linear-gradient(to top, #d3d3d3 2px 4px, transparent 4px 6px),
-  linear-gradient(180deg, #E7E7E7 0%, #1A1A1A 100%);
+  background-image: repeating-linear-gradient(to left, #d3d3d3 2px 4px, transparent 4px 6px), repeating-linear-gradient(to top, #d3d3d3 2px 4px, transparent 4px 6px), linear-gradient(180deg, #e7e7e7 0%, #1a1a1a 100%);
   background-attachment: fixed;
-  
-} 
+}
 
 .header {
   flex-shrink: 0;
@@ -33,7 +29,7 @@
   min-height: clamp(20.3125rem, 17.1729rem + 13.3956vw, 23rem);
   max-width: 700px;
   width: 100%;
-  --font-family: 'PressStart2P-Regular';
+  --font-family: "PressStart2P-Regular";
   font-family: var(--font-family), sans-serif;
   text-transform: uppercase;
   font-style: normal;
@@ -50,7 +46,7 @@
 }
 
 .header-title {
-  font-size: clamp(3.0625rem, 1.8943rem + 4.9844vw, 4.0625rem); 
+  font-size: clamp(3.0625rem, 1.8943rem + 4.9844vw, 4.0625rem);
 }
 
 .header-text {
@@ -82,11 +78,11 @@
 }
 
 .bus-image::after {
-  content: '';
+  content: "";
   position: absolute;
-  color: rgba(0,0,0);
+  color: rgba(0, 0, 0);
   -webkit-text-stroke: 0.5px #fff;
-  --font-family: 'PressStart2P-Regular';
+  --font-family: "PressStart2P-Regular";
   font-family: var(--font-family), sans-serif;
   font-size: 14px;
   font-style: normal;
@@ -108,21 +104,18 @@
   gap: 27px;
   padding: 25px;
   border-top: 2px solid #000;
- 
 }
 
 .card-title {
   padding: 4px 6px 5px 10px;
   border-bottom: 2px solid #000;
   font-size: 18px;
-  
 }
 
 .card-text {
   font-size: 18px;
   font-style: normal;
   line-height: 21px;
-  
 }
 
 .card__like-button {
@@ -139,7 +132,7 @@
   color: #fff;
   position: relative;
   z-index: 1;
-  --font-family: 'PressStart2P-Regular';
+  --font-family: "PressStart2P-Regular";
   font-family: var(--font-family), sans-serif;
   font-size: 14px;
   align-self: center;
@@ -233,25 +226,23 @@ svg.like-icon {
 
 @keyframes scale {
   from {
-    scale: 1;
+      scale: 1;
   }
 
   to {
-    scale: 1.25;
+      scale: 1.25;
   }
 }
-
 
 @keyframes fire {
   from {
-    opacity: 0;
+      opacity: 0;
   }
 
   to {
-    opacity: 1;
+      opacity: 1;
   }
 }
-
 
 .like-icon.is-liked .contour {
   --color-svg: red;
@@ -266,16 +257,12 @@ svg.like-icon {
 
 .like-icon.is-liked .core {
   fill: red;
-  transition:  0.3s 0.05s;
+  transition: 0.3s 0.05s;
 }
-
-
 
 .sparks {
   opacity: 0;
 }
-
-
 
 .disk {
   position: relative;
@@ -285,8 +272,6 @@ svg.like-icon {
   color: white;
   z-index: 1;
 }
-
-
 
 .disk-big {
   position: relative;
@@ -315,9 +300,9 @@ svg.like-icon {
   height: 38px;
   grid-column: 1/3;
   grid-row: span 2;
-} 
+}
 
-.dialog  {
+.dialog {
   min-width: 341px;
   width: clamp(21.3125rem, 20.1443rem + 4.9844vw, 22.3125rem);
   height: 195px;
@@ -346,7 +331,6 @@ dialog[open]::backdrop {
 
 .animation-button {
   transition: 0.3s;
-  
 }
 
 .animation-button::after {
@@ -370,25 +354,22 @@ dialog[open]::backdrop {
 
 @media (width <= 375px) {
   .button-style {
-    flex-direction: column;
-    margin: 49px 0px 100px;
+      flex-direction: column;
+      margin: 49px 0px 100px;
   }
   .disk {
-    width: 28px;
-    padding-top: 8px;
+      width: 28px;
+      padding-top: 8px;
   }
 
-
   .dialog {
-    padding: 31px 38px;
+      padding: 31px 38px;
   }
 
   .header {
-    margin: 100px 0 102px;
+      margin: 100px 0 102px;
   }
 }
-
-
 
 .card:nth-child(2) .bus-image {
   filter: saturate(20%);
@@ -413,46 +394,42 @@ dialog[open]::backdrop {
 
 .card:nth-child(7) .bus-image {
   filter: blur(2px);
-
-  
- 
 }
 
 .card:nth-child(8) .bus-image {
   filter: brightness(300%);
 }
 
-
 .card:nth-child(1) .bus-image::after {
-  content: '</HTML>';
+  content: "</HTML>";
 }
 
 .card:nth-child(2) .bus-image::after {
-  content: '</HTML>';
+  content: "</HTML>";
 }
 
 .card:nth-child(3) .bus-image::after {
-  content: '<CSS>';
+  content: "<CSS>";
 }
 
 .card:nth-child(4) .bus-image::after {
-  content: '<desigions>';
+  content: "<desigions>";
 }
 
 .card:nth-child(5) .bus-image::after {
-  content: 'care';
+  content: "care";
 }
 
 .card:nth-child(6) .bus-image::after {
-  content: '<support>';
+  content: "<support>";
 }
 
 .card:nth-child(7) .bus-image::after {
-  content: '<lifes-style: none;>';
+  content: "<lifes-style: none;>";
 }
 
 .card:nth-child(8) .bus-image::after {
-  content: '<experience>';
+  content: "<experience>";
 }
 
 
