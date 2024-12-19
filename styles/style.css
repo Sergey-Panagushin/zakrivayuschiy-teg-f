@@ -319,9 +319,9 @@ svg.like-icon {
 
 .dialog  {
   min-width: 341px;
-  width: clamp(16.0625rem, -31.8906rem + 225vw, 18.3125rem);
+  width: clamp(21.3125rem, 20.1443rem + 4.9844vw, 22.3125rem);
   height: 195px;
-  padding: 31px 38px;
+  padding: 31px 30px;
   position: fixed;
   inset: 0;
 }
@@ -338,7 +338,10 @@ dialog[open]::backdrop {
   grid-template-rows: 1fr 1fr;
   row-gap: 27px;
   column-gap: 5px;
+}
 
+.text-big {
+  text-transform: uppercase;
 }
 
 .animation-button {
@@ -368,15 +371,18 @@ dialog[open]::backdrop {
 @media (width <= 375px) {
   .button-style {
     flex-direction: column;
+    margin: 49px 0px 100px;
   }
   .disk {
     width: 28px;
     padding-top: 8px;
   }
 
-  .button-style-dialog {
-    margin: 49px 0px 100px;
+
+  .dialog {
+    padding: 31px 38px;
   }
+
   .header {
     margin: 100px 0 102px;
   }
