@@ -2,7 +2,8 @@
 
 :root {
     --wght: 400;
-    --font-family: 'Inter-Variable';
+    --font-family-main: 'Inter-Variable';
+    --font-family-additional: 'PressStart2P';
     --button-color: #fff;
     --color-svg: black;
     --color-fill: #FF0000;
